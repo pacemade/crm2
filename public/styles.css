@@ -1,0 +1,66 @@
+/* THIS IS ALL HEADER STUFF */
+
+header h2 {
+  text-align: center;
+  font-size: 2.2em;
+  background-color: rgb(114, 201, 210)
+}
+
+.header_links {
+  text-align: center;
+}
+
+.header_links a {
+  display: block;
+  font-size: 2em;
+  background-color: rgba(238, 55, 57, 0.54);
+  margin: 1px;
+  text-decoration: none;
+}
+
+
+/* THIS IS STUFF FOR THE CONTACT LIST */
+
+.contacts {
+  border: medium solid gold;
+  max-width: 92%;
+  margin: auto;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li {
+  padding: 10px;
+  font-size: 1em;
+  background-color: grey;
+  margin: 20px;
+}
+
+.contacts h3 {
+  padding: 10px;
+  font-size: 1em;
+  background-color: pink;
+  margin: 20px;
+}
+
+.edit_delete a {
+  text-decoration: none;
+}
+
+
+/* THIS IS ALL THE FOOTER STUFF */
+
+footer {
+  background-color: rgb(55, 54, 57);
+  height: 100px;
+}
+
+footer h4 {
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+  background-color: rgb(55, 54, 57);
+}
