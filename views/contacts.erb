@@ -2,7 +2,7 @@
     <h3>There are <%= @contacts.size %> contacts</h3>
     <ul>
       <% @contacts.each do |contact| %>
-          <li><div class="contact_info"><%= "#{contact.first_name} #{contact.last_name} #{contact.id} (#{contact.email})" %></div>
+          <li><div class="contact_info"><%= "#{contact.first_name} #{contact.last_name} (#{contact.email})" %></div>
           <div class = 'edit_delete'><a href="#">Edit</a> | <a href="#">Delete</a></div></li>
           <!-- <li> Note: <%= contact.note %></li> -->
       <% end %>
