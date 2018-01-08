@@ -3,7 +3,9 @@
 header h2 {
   text-align: center;
   font-size: 2.2em;
-  background-color: rgb(114, 201, 210)
+  background-color: rgb(114, 201, 210);
+  padding: 20px;
+  margin: 0;
 }
 
 .header_links {
@@ -13,7 +15,7 @@ header h2 {
 .header_links a {
   display: block;
   font-size: 2em;
-  background-color: rgba(238, 55, 57, 0.54);
+  background-color: rgba(244, 144, 62, 1);
   margin: 1px;
   text-decoration: none;
 }
@@ -22,28 +24,28 @@ header h2 {
 /* THIS IS STUFF FOR THE CONTACT LIST */
 
 .contacts {
-  border: medium solid gold;
-  max-width: 92%;
+  max-width: 95%;
   margin: auto;
 }
 
 .contacts ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .contacts li {
   padding: 10px;
   font-size: 1em;
   background-color: grey;
-  margin: 20px;
+  margin: 5px;
 }
 
 .contacts h3 {
   padding: 10px;
   font-size: 1em;
   background-color: pink;
-  margin: 20px;
+  margin: 5px;
 }
 
 .edit_delete a {
@@ -55,7 +57,7 @@ header h2 {
 
 footer {
   background-color: rgb(55, 54, 57);
-  height: 100px;
+  padding: 10px;
 }
 
 footer h4 {

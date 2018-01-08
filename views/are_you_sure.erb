@@ -1,0 +1,6 @@
+<h1>Are you sure you want to delete <%= @contact.first_name %>?</h2>
+
+  <form action='/contacts/<%= @contact.id %>' method='post'>
+    <input type='hidden' name='_method' value='delete'>
+    <input type='submit' value='Delete Me :('>
+  </form>

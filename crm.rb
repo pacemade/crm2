@@ -6,7 +6,7 @@ get '/' do
 end
 
 get '/contacts' do
-  @contacts = Contact.all
+  @contacts = Contact.all.order("last_name")
   erb :contacts
 end
 
@@ -22,6 +22,15 @@ post '/contacts' do
     note:       params[:note]
   )
   redirect to('/contacts')
+end
+
+get '/contacts/:id/are_you_sure?' do
+  @contact = Contact.find_by(id: params[:id].to_i)
+  if @contact
+    erb :are_you_sure
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 get '/contacts/:id' do
@@ -59,7 +68,7 @@ put '/contacts/:id' do
 end
 
 delete '/contacts/:id' do
-  @contact = Contact.find_by(params[:id].to_i)
+  @contact = Contact.find(params[:id].to_i)
   if @contact
     @contact.delete
     redirect to('/contacts')
